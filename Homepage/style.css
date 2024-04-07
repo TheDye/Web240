@@ -1,0 +1,214 @@
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: #61afef;
+}
+
+a {
+  color: #61afef;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  color: #000;
+  background-color: #ffffff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.glow {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #f9d423, 0 0 40px #f9d423, 0 0 50px #f9d423,
+    0 0 60px #f9d423, 0 0 70px #f9d423;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 105x #fff, 0 0 25px #fff, 0 0 35px #f9d423, 0 0 45px #f9d423, 0 0 55px #f9d423,
+      0 0 65px #f9d423, 0 0 75px #f9d423;
+  }
+
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 40px #f9d423, 0 0 50px #f9d423, 0 0 60px #f9d423, 0 0 70px #f9d423,
+      0 0 80px #f9d423, 0 0 90px #f9d423;
+  }
+}
+
+.future-button {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+}
+
+.future-label {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.future-input {
+  background-color: #1d1f20;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+}
+
+img {
+  border-radius: 200px;
+  position: absolute;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) translateX(145px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg) translateX(145px) rotate(-360deg);
+  }
+}
+.video-row {
+  text-align: center; /* Center the videos */
+  width: 100%; /* Set a fixed width for the container */
+  overflow-x: scroll; /* Add horizontal scrolling */
+  white-space: nowrap; /* Prevent videos from wrapping */
+}
+
+.video-row video {
+  display: inline-block; /* Display videos next to each other */
+  height: 500px; /* Set a fixed height */
+  margin: 2px; /* Add some spacing between videos */
+}
+audio {
+  background-image: url("https://th.bing.com/th/id/R.9f0dd2e66e32a5f097ec455920420022?rik=pgK4xo3cxpeEUA&pid=ImgRaw&r=0");
+  color: white;
+}
+body {
+  background-color: #292929;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+audio {
+  width: 100%;
+  height: 50px;
+  background-image: url("https://th.bing.com/th/id/R.9f0dd2e66e32a5f097ec455920420022?rik=pgK4xo3cxpeEUA&pid=ImgRaw&r=0");
+  color: white;
+}
+button {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c9302c;
+}
+/* Reset default styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the navigation bar */
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Styling the navigation links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #00f2ff;
+}
+
+/* Styling the 3D model container */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 1000px;
+  background-color: #f2f2f2;
+}
+
+/* Styling the rotating 3D model */
+.portfolio-model {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+/* Keyframes for rotating animation */
+@keyframes rotate {
+  0% {
+      transform: rotateY(0);
+  }
+  100% {
+      transform: rotateY(1turn);
+  }
+}

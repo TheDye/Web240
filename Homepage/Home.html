@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>7A_Story</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+</style>
+  <li><a href="#">Home</a></li>
+    <li><a href="/About/about.html">About</a></li>
+  
+  <audio id="myAudio" autoplay loop>
+    <source src="/music/sound_1.mp3" type="audio/mpeg">
+  </audio>
+  <button>Stop Music</button>
+  <div class="video-row">
+    <video src="/videos/video_1.mp4" controls></video>
+    <video src="/videos/video_2.mp4" controls></video>
+    <video src="/videos/video_3.mp4" controls></video>
+    <video src="/videos/video_4.mp4" controls></video>
+  </div>
+  <h1 id="color-changing-heading">Kick Me </h1>
+  <img
+    src="https://play-lh.googleusercontent.com/5jh0epwemFA0wqDy2jMTIimE626RxHmSMvUy615OVaQLc9ihtylTgktmDry3o6KJbXZT=w280-h280">
+
+  <div class="glow">BRO BUYN IS COOL</div>
+  <form>
+    <label for="input" class="future-label">Whats your name:</label>
+    <input type="text" id="input" name="input" class="future-input"> <input type="submit" value="Submit"
+      class="future-button">
+  </form>
+  <p id="changing-text"></p>
+  <p id="zoom-text">Tselmuun and molo two goofy bro's</p>
+  <style>
+    #zoom-text {
+      position: absolute;
+      top: 65%;
+      right: 25%;
+      font-size: 24px;
+      animation-name: zoom;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(0.5);
+      }
+    }
+  </style>
+  <script>
+    const heading = document.getElementById('color-changing-heading');
+    // nerd hun ongo helej baina
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+    // monhoog sonsdog booln  ghimu
+    heading.addEventListener('click', () => {
+      // monhoo gin utasn
+      const randomColor = getRandomColor();
+      // monhoogin ongig oorchildog yum
+      heading.style.color = randomColor;
+    });
+  </script>
+  <script src="home.js"></script>
+</body>
+
+</html>
