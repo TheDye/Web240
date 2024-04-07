@@ -6,6 +6,7 @@ const users = [
   { username: 'monhtulga', password: 'oros320228b' },
   { username: 'tselmeg', password: 'oros320228b' },
   { username: 'buji', password: 'oros320228b' },
+  { username: 'test', password: 'test' },
   // Add more users as needed
 ];
 
