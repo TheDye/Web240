@@ -24,5 +24,4 @@ function checkLogin() {
   } else {
     alert('Invalid username or password. Please try again.');
   }
-  }
 }
