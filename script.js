@@ -24,12 +24,5 @@ function checkLogin() {
   } else {
     alert('Invalid username or password. Please try again.');
   }
-}
-
-// LISTEN TO YOUR KEYBOARD BARAD
-document.getElementById('password').addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
-    event.preventDefault();
-    checkLogin();
   }
-});
+}
