@@ -5,7 +5,7 @@ form.addEventListener('submit', (event) => {
   const inputValue = input.value.trim();
   if (inputValue !== '') {
     const spookyText = document.createElement('p');
-    spookyText.innerText = `${inputValue} Bro Nice to meet you join to 7A! 👻`;
+    spookyText.innerText = `${inputValue} I WILL IMPROVE THAT LATER! 👻`;
     document.body.appendChild(spookyText);
   }
 });
